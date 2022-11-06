@@ -1,0 +1,10 @@
+def soma_imposto (taxa_imposto, custo):
+    soma_imposto = vcompra * taxa_imposto / 100
+    soma_imposto = custo + soma_imposto
+    print(f"O custo do produto (somado o imposto) é: R${soma_imposto:.2f}")
+    
+    
+vcompra = float(input("Informe o valor de compra do produto: R$"))
+taxa_imposto = float(input("Informe a alíquito do imposto: %"))
+custo = vcompra
+soma_imposto(taxa_imposto, custo)
