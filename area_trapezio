@@ -1,0 +1,11 @@
+def area_trapezio (base_maior, base_menor, altura):
+    area_trapezio = (base_maior + base_menor) * altura / 2 
+    print(f"A área do trapézio é: {area_trapezio: .2f}")
+
+
+print("Cálculo da área do trapézio:")
+base_maior = float(input("Base maior? "))
+base_menor  = float(input("Base menor? "))
+altura  = float(input("Altura? "))
+
+area_trapezio(base_maior, base_menor, altura)
