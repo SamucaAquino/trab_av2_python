@@ -24,7 +24,7 @@ def saida_hora(A,P):
         print(f"\{hora_convert(hora)}:0{minuto} {P}")
     elif hora > 12 and minuto >= 10:
         print(f"\n{hora_convert(hora)}:{minuto} {P}")
-        
+
 
 hora = int(input("Informe a hora: "))
 minuto = int(input("Informe o minuto: "))
@@ -33,8 +33,11 @@ P = "P.M."
 hora_convert(hora)
 saida_hora(A,P)
 
-while (hora >= 0):
+while True:
     hora = int(input("\nInforme a hora: "))
+    if hora < 0:
+        print('\nACABOU POR AQUI')
+        break
     minuto = int(input("Informe o minuto: "))
     hora_convert(hora)
     saida_hora(A,P)
