@@ -1,21 +1,40 @@
-def hora_convert(A,P):
-    if hora <= 11 and minuto == minuto:
-        print(f"\n{hora}:{minuto} {A}")
-    elif hora == 0 and minuto == minuto:
-        print(f"\n{hora}:{minuto} {A}")
-    elif hora == 12 and minuto == minuto:
-        print(f"\n{hora}:{minuto} {P}")
-    else:
-        print(f"\n{hora - 12}:{minuto} {P}")
+def hora_convert(hora):
+    if hora == 0:
+        hora = 12 - 12
+    elif hora <=11:
+        hora = hora
+    elif hora == 12:
+        hora = 12
+    elif hora > 12:
+        hora = hora - 12
+    
+    return(hora)
         
- 
+
+def saida_hora(A,P):
+    if hora < 12 and minuto < 10:
+        print(f"\n0{hora_convert(hora)}:0{minuto} {A}")
+    elif hora < 12 and minuto >= 10:
+        print(f"\n0{hora_convert(hora)}:{minuto} {A}")
+    elif hora == 12 and minuto < 10:
+        print(f"\n{hora_convert(hora)}:0{minuto} {P}")
+    elif hora == 12 and minuto >= 10:
+        print(f"\n{hora_convert(hora)}:{minuto} {P}")    
+    elif hora > 12 and minuto < 10:
+        print(f"\{hora_convert(hora)}:0{minuto} {P}")
+    elif hora > 12 and minuto >= 10:
+        print(f"\n{hora_convert(hora)}:{minuto} {P}")
+        
+
 hora = int(input("Informe a hora: "))
 minuto = int(input("Informe o minuto: "))
 A = "A.M."
 P = "P.M."
-hora_convert(A,P)
+hora_convert(hora)
+saida_hora(A,P)
 
 while (hora >= 0):
     hora = int(input("\nInforme a hora: "))
     minuto = int(input("Informe o minuto: "))
-    hora_convert(A,P)
+    hora_convert(hora)
+    saida_hora(A,P)
