@@ -1,0 +1,18 @@
+# trab_av2_python
+
+>area_trapezio:
+Esse programa foi desenvolvido para obter a área de um trapézio.
+O usuário deve informar o valor da base maior, da base menor e da altura.
+Em seguida o programa chama a função que calcula essas informações e retorna o valor da área.
+
+
+>calc_preço_prodt:
+Esse programa foi desenvolvido para somar o imposto juntamente com o preço de compra do produto, obtendo o valor do custo do produto. 
+Foi utilzado uma função, "soma_imposto (taxa_imposto, custo)". 
+O programa pede o valor de compra e a taxa de imposto ao usuário, e o programa usa a função para retornar o preço do produto.
+
+
+>Convers_format_hora:
+Esse progrmama foi desenvolvido para ser um conversor de formatação de horas, de 24 horas em 12 horas (A.M./P.M).
+Nele contém duas funções, uma para converter as horas e a outra para dá a saída dos dados, há tambem um lopping na estrutura do programa.
+O programa pede a hora e os minutos ao usuário, caso o usuário insira um valor negativo, o programa será finalizado.
